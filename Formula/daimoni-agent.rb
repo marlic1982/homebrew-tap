@@ -7,18 +7,18 @@ class DaimoniAgent < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-darwin-arm64.zip"
-      sha256 "5c49b97cf573bb8a60dd5a4e7f5bdb7488c3265a46477fdce32baa69f96725aa"
+      sha256 "c95643bb5c6c88743ae15c58e4a87dbee840cd45c7b8ca6b6a51d9964b8e9be6"
     else
       url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-darwin-amd64.zip"
-      sha256 "7cba4cbfc8f7451c4e2d6b6fa68b2bacf1cab5e362f826edf6aebe6f5bba455d"
+      sha256 "3a668991e756fbf8aad8600f8913e56da6109ab504a4f6afd3b1701933d41060"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-linux-arm64.zip"
-      sha256 "66112af808ebb0683b09152b68585b310000ed0afa427c06c2b91896a113c650"
+      sha256 "d3c2b4b0420da716086e8ea3b56875274a8a87301674bd349de44d12b37bd472"
     else
       url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-linux-amd64.zip"
-      sha256 "7a1ca63a013646f899f63142c1ca188a68a379f0bb3f78550bda2397160efbdb"
+      sha256 "290f0eabbe031483a7f1760e9f1e92141af9eb8b3f2251576ebcc3bea49834d4"
     end
   end
 
