@@ -2,10 +2,10 @@
 #
 # Filled in by installers/scripts/release.sh:
 #   0.2.0            → e.g. 0.2.0
-#   5c49b97cf573bb8a60dd5a4e7f5bdb7488c3265a46477fdce32baa69f96725aa       → checksum for darwin-arm64 zip
-#   dd5b73cd14b35ba8fdbef3778ad754f7c2b22445025f2e0d8a9c6563262f5f93       → checksum for darwin-amd64 zip
-#   350470767bc4d247db17d595831769e75331a289c71799065a2e6f0d0f64f41e → checksum for linux-amd64 zip
-#   e0253194e1ae7c1fa8e6ba4033b6dfc380418176e71275a4dc4887dfbca5e926 → checksum for linux-arm64 zip
+#   43126b03372e4ecb60a3c181f5e56cd692e0274cf09ade13f17a511cbfcd396c       → checksum for darwin-arm64 zip
+#   7cba4cbfc8f7451c4e2d6b6fa68b2bacf1cab5e362f826edf6aebe6f5bba455d       → checksum for darwin-amd64 zip
+#   7a1ca63a013646f899f63142c1ca188a68a379f0bb3f78550bda2397160efbdb → checksum for linux-amd64 zip
+#   66112af808ebb0683b09152b68585b310000ed0afa427c06c2b91896a113c650 → checksum for linux-arm64 zip
 #
 # Output is committed to https://github.com/marlic1982/homebrew-tap
 # as `Formula/daimoni-agent.rb`. End user runs:
@@ -19,19 +19,19 @@ class DaimoniAgent < Formula
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/marlic1982/Daimoni/releases/download/v0.2.0/daimoni-agent-darwin-arm64.zip"
-      sha256 "5c49b97cf573bb8a60dd5a4e7f5bdb7488c3265a46477fdce32baa69f96725aa"
+      url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-darwin-arm64.zip"
+      sha256 "43126b03372e4ecb60a3c181f5e56cd692e0274cf09ade13f17a511cbfcd396c"
     else
-      url "https://github.com/marlic1982/Daimoni/releases/download/v0.2.0/daimoni-agent-darwin-amd64.zip"
-      sha256 "dd5b73cd14b35ba8fdbef3778ad754f7c2b22445025f2e0d8a9c6563262f5f93"
+      url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-darwin-amd64.zip"
+      sha256 "7cba4cbfc8f7451c4e2d6b6fa68b2bacf1cab5e362f826edf6aebe6f5bba455d"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/marlic1982/Daimoni/releases/download/v0.2.0/daimoni-agent-linux-arm64.zip"
-      sha256 "e0253194e1ae7c1fa8e6ba4033b6dfc380418176e71275a4dc4887dfbca5e926"
+      url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-linux-arm64.zip"
+      sha256 "66112af808ebb0683b09152b68585b310000ed0afa427c06c2b91896a113c650"
     else
-      url "https://github.com/marlic1982/Daimoni/releases/download/v0.2.0/daimoni-agent-linux-amd64.zip"
-      sha256 "350470767bc4d247db17d595831769e75331a289c71799065a2e6f0d0f64f41e"
+      url "https://github.com/marlic1982/daimoni-releases/releases/download/v0.2.0/daimoni-agent-linux-amd64.zip"
+      sha256 "7a1ca63a013646f899f63142c1ca188a68a379f0bb3f78550bda2397160efbdb"
     end
   end
 
